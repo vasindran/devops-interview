@@ -1,64 +1,72 @@
-"$schema" = "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
+terraform {
 
-"contentVersion" = "1.0.0.0"
-
-"parameters" "serverfarms_ASP_devopsinterview_92c5_externalid" {
-  "defaultValue" = "/subscriptions/62a74f08-c4ec-4c6a-8379-32007cd69139/resourceGroups/devops-interview/providers/Microsoft.Web/serverfarms/ASP-devopsinterview-92c5"
-
-  "type" = "String"
+  required_version = ">=0.12"
+  
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "~>2.0"
+    }
+  }
 }
 
-"parameters" "sites_BradyWather_name" {
-  "defaultValue" = "BradyWather"
+parameters "serverfarms_ASP_devopsinterview_92c5_externalid" {
+  value = "/subscriptions/62a74f08-c4ec-4c6a-8379-32007cd69139/resourceGroups/devops-interview/providers/Microsoft.Web/serverfarms/ASP-devopsinterview-92c5"
 
-  "type" = "String"
+  type = "String"
 }
 
-"resources" = {
-  "apiVersion" = "2021-02-01"
+parameters "sites_BradyWather_name" {
+  value = "BradyWather"
 
-  "kind" = "app,linux"
+  type = "String"
+}
 
-  "location" = "Central US"
+resources = {
+  apiVersion = "2021-02-01"
 
-  "name" = "[parameters('sites_BradyWather_name')]"
+  kind = "app,linux"
 
-  "properties" = {
-    "clientAffinityEnabled" = false
+  location = "Central US"
 
-    "clientCertEnabled" = false
+  name = "[parameters('sites_BradyWather_name')]"
 
-    "clientCertMode" = "Required"
+  properties = {
+    clientAffinityEnabled = false
 
-    "containerSize" = 0
+    clientCertEnabled = false
 
-    "customDomainVerificationId" = "6BD906043BDD1492E6F9A5E028112A1F67FF2B080D0DE60DF3B2E92E5A7CEE84"
+    clientCertMode = "Required"
 
-    "dailyMemoryTimeQuota" = 0
+    containerSize = 0
 
-    "enabled" = true
+    customDomainVerificationId = "6BD906043BDD1492E6F9A5E028112A1F67FF2B080D0DE60DF3B2E92E5A7CEE84"
 
-    "hostNameSslStates" = {
-      "hostType" = "Standard"
+    dailyMemoryTimeQuota = 0
 
-      "name" = "bradywather.azurewebsites.net"
+    enabled = true
 
-      "sslState" = "Disabled"
+    hostNameSslStates" = {
+      hostType = "Standard"
+
+      name = "bradywather.azurewebsites.net"
+
+      sslState = "Disabled"
     }
 
-    "hostNameSslStates" = {
-      "hostType" = "Repository"
+    hostNameSslStates" = {
+      hostType = "Repository"
 
-      "name" = "bradywather.scm.azurewebsites.net"
+      name = "bradywather.scm.azurewebsites.net"
 
-      "sslState" = "Disabled"
+      sslState = "Disabled"
     }
 
-    "hostNamesDisabled" = false
+    hostNamesDisabled = false
 
-    "httpsOnly" = false
+    httpsOnly = false
 
-    "hyperV" = false
+    hyperV = false
 
     "isXenon" = false
 
