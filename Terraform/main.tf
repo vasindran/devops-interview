@@ -46,7 +46,7 @@ resources = {
 
     enabled = true
 
-    hostNameSslStates" = {
+    hostNameSslStates = {
       hostType = "Standard"
 
       name = "bradywather.azurewebsites.net"
@@ -54,7 +54,7 @@ resources = {
       sslState = "Disabled"
     }
 
-    hostNameSslStates" = {
+    hostNameSslStates = {
       hostType = "Repository"
 
       name = "bradywather.scm.azurewebsites.net"
@@ -68,254 +68,254 @@ resources = {
 
     hyperV = false
 
-    "isXenon" = false
+    isXenon = false
 
-    "keyVaultReferenceIdentity" = "SystemAssigned"
+    keyVaultReferenceIdentity = "SystemAssigned"
 
-    "redundancyMode" = "None"
+    redundancyMode = "None"
 
-    "reserved" = true
+    reserved = true
 
-    "scmSiteAlsoStopped" = false
+    scmSiteAlsoStopped = false
 
-    "serverFarmId" = "[parameters('serverfarms_ASP_devopsinterview_92c5_externalid')]"
+    serverFarmId = "[parameters('serverfarms_ASP_devopsinterview_92c5_externalid')]"
 
-    "siteConfig" = {
-      "acrUseManagedIdentityCreds" = false
+    siteConfig = {
+      acrUseManagedIdentityCreds = false
 
-      "alwaysOn" = false
+      alwaysOn = false
 
-      "functionAppScaleLimit" = 0
+      functionAppScaleLimit = 0
 
-      "http20Enabled" = false
+      http20Enabled = false
 
-      "linuxFxVersion" = "DOTNETCORE|3.1"
+      linuxFxVersion = "DOTNETCORE|3.1"
 
-      "minimumElasticInstanceCount" = 0
+      minimumElasticInstanceCount = 0
 
-      "numberOfWorkers" = 1
+      numberOfWorkers = 1
     }
 
-    "storageAccountRequired" = false
+    storageAccountRequired = false
   }
 
-  "tags" = {
-    "company" = "home"
+  tags = {
+    company = "home"
 
-    "purpose" = "interview"
+    purpose = "interview"
   }
 
-  "type" = "Microsoft.Web/sites"
+  type = "Microsoft.Web/sites"
 }
 
-"resources" = {
-  "apiVersion" = "2021-02-01"
+resources = {
+  apiVersion = "2021-02-01"
 
-  "dependsOn" = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
+  dependsOn = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
 
-  "location" = "Central US"
+  location = "Central US"
 
-  "name" = "[concat(parameters('sites_BradyWather_name'), '/ftp')]"
+  name = "[concat(parameters('sites_BradyWather_name'), '/ftp')]"
 
-  "properties" = {
-    "allow" = true
+  properties = {
+    allow = true
   }
 
-  "tags" = {
-    "company" = "home"
+  tags = {
+    company = "home"
 
-    "purpose" = "interview"
+    purpose = "interview"
   }
 
-  "type" = "Microsoft.Web/sites/basicPublishingCredentialsPolicies"
+  type = "Microsoft.Web/sites/basicPublishingCredentialsPolicies"
 }
 
-"resources" = {
-  "apiVersion" = "2021-02-01"
+resources = {
+  apiVersion = "2021-02-01"
 
-  "dependsOn" = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
+  dependsOn = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
 
-  "location" = "Central US"
+  location = "Central US"
 
-  "name" = "[concat(parameters('sites_BradyWather_name'), '/scm')]"
+  name = "[concat(parameters('sites_BradyWather_name'), '/scm')]"
 
-  "properties" = {
-    "allow" = true
+  properties = {
+    allow = true
   }
 
-  "tags" = {
-    "company" = "home"
+  tags = {
+    company = "home"
 
-    "purpose" = "interview"
+    purpose = "interview"
   }
 
-  "type" = "Microsoft.Web/sites/basicPublishingCredentialsPolicies"
+  type = "Microsoft.Web/sites/basicPublishingCredentialsPolicies"
 }
 
-"resources" = {
-  "apiVersion" = "2021-02-01"
+resources = {
+  apiVersion = "2021-02-01"
 
-  "dependsOn" = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
+  dependsOn = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
 
-  "location" = "Central US"
+  location = "Central US"
 
-  "name" = "[concat(parameters('sites_BradyWather_name'), '/web')]"
+  name = "[concat(parameters('sites_BradyWather_name'), '/web')]"
 
-  "properties" = {
-    "acrUseManagedIdentityCreds" = false
+  properties = {
+    acrUseManagedIdentityCreds = false
 
-    "alwaysOn" = false
+    alwaysOn = false
 
-    "autoHealEnabled" = false
+    autoHealEnabled = false
 
-    "azureStorageAccounts" = {}
+    azureStorageAccounts = {}
 
-    "defaultDocuments" = ["Default.htm", "Default.html", "Default.asp", "index.htm", "index.html", "iisstart.htm", "default.aspx", "index.php", "hostingstart.html"]
+    defaultDocuments = ["Default.htm", "Default.html", "Default.asp", "index.htm", "index.html", "iisstart.htm", "default.aspx", "index.php", "hostingstart.html"]
 
-    "detailedErrorLoggingEnabled" = false
+    detailedErrorLoggingEnabled = false
 
-    "experiments" = {
-      "rampUpRules" = []
+    experiments = {
+      rampUpRules = []
     }
 
-    "ftpsState" = "AllAllowed"
+    ftpsState = "AllAllowed"
 
-    "functionAppScaleLimit" = 0
+    functionAppScaleLimit = 0
 
-    "functionsRuntimeScaleMonitoringEnabled" = false
+    functionsRuntimeScaleMonitoringEnabled = false
 
-    "http20Enabled" = false
+    http20Enabled = false
 
-    "httpLoggingEnabled" = false
+    httpLoggingEnabled = false
 
-    "ipSecurityRestrictions" = {
-      "action" = "Allow"
+    ipSecurityRestrictions = {
+      action = "Allow"
 
-      "description" = "Allow all access"
+      description = "Allow all access"
 
-      "ipAddress" = "Any"
+      ipAddress = "Any"
 
-      "name" = "Allow all"
+      name = "Allow all"
 
-      "priority" = 1
+      priority = 1
     }
 
-    "linuxFxVersion" = "DOTNETCORE|3.1"
+    linuxFxVersion = "DOTNETCORE|3.1"
 
-    "loadBalancing" = "LeastRequests"
+    loadBalancing = "LeastRequests"
 
-    "localMySqlEnabled" = false
+    localMySqlEnabled = false
 
-    "logsDirectorySizeLimit" = 35
+    logsDirectorySizeLimit = 35
 
-    "managedPipelineMode" = "Integrated"
+    managedPipelineMode = "Integrated"
 
-    "minTlsVersion" = "1.2"
+    minTlsVersion = "1.2"
 
-    "minimumElasticInstanceCount" = 0
+    minimumElasticInstanceCount = 0
 
-    "netFrameworkVersion" = "v4.0"
+    netFrameworkVersion = "v4.0"
 
-    "numberOfWorkers" = 1
+    numberOfWorkers = 1
 
-    "preWarmedInstanceCount" = 0
+    preWarmedInstanceCount = 0
 
-    "publishingUsername" = "$BradyWather"
+    publishingUsername = "$BradyWather"
 
-    "remoteDebuggingEnabled" = false
+    remoteDebuggingEnabled = false
 
-    "requestTracingEnabled" = false
+    requestTracingEnabled = false
 
-    "scmIpSecurityRestrictions" = {
-      "action" = "Allow"
+    scmIpSecurityRestrictions = {
+      action = "Allow"
 
-      "description" = "Allow all access"
+      description = "Allow all access"
 
-      "ipAddress" = "Any"
+      ipAddress = "Any"
 
-      "name" = "Allow all"
+      name = "Allow all"
 
-      "priority" = 1
+      priority = 1
     }
 
-    "scmIpSecurityRestrictionsUseMain" = false
+    scmIpSecurityRestrictionsUseMain = false
 
-    "scmMinTlsVersion" = "1.0"
+    scmMinTlsVersion = "1.0"
 
-    "scmType" = "GitHubAction"
+    scmType = "GitHubAction"
 
-    "use32BitWorkerProcess" = true
+    use32BitWorkerProcess = true
 
-    "virtualApplications" = {
-      "physicalPath" = "site\\wwwroot"
+    virtualApplications = {
+      physicalPath = "site\\wwwroot"
 
-      "preloadEnabled" = false
+      preloadEnabled = false
 
-      "virtualPath" = "/"
+      virtualPath = "/"
     }
 
-    "vnetPrivatePortsCount" = 0
+    vnetPrivatePortsCount = 0
 
-    "vnetRouteAllEnabled" = false
+    vnetRouteAllEnabled = false
 
-    "webSocketsEnabled" = false
+    webSocketsEnabled = false
   }
 
-  "tags" = {
-    "company" = "home"
+  tags = {
+    company = "home"
 
-    "purpose" = "interview"
+    purpose = "interview"
   }
 
-  "type" = "Microsoft.Web/sites/config"
+  type = "Microsoft.Web/sites/config"
 }
 
-"resources" = {
-  "apiVersion" = "2021-02-01"
+resources = {
+  apiVersion = "2021-02-01"
 
-  "dependsOn" = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
+  dependsOn = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
 
-  "location" = "Central US"
+  location = "Central US"
 
-  "name" = "[concat(parameters('sites_BradyWather_name'), '/80db54408a994c5a86372a0c827f3ecd')]"
+  name = "[concat(parameters('sites_BradyWather_name'), '/80db54408a994c5a86372a0c827f3ecd')]"
 
-  "properties" = {
-    "active" = true
+  properties = {
+    active = true
 
-    "author" = "N/A"
+    author = "N/A"
 
-    "author_email" = "N/A"
+    author_email = "N/A"
 
-    "deployer" = "GITHUB_ZIP_DEPLOY"
+    deployer = "GITHUB_ZIP_DEPLOY"
 
-    "end_time" = "2022-01-16T13:11:16.7296202Z"
+    end_time = "2022-01-16T13:11:16.7296202Z"
 
-    "message" = "{\"type\":\"deployment\",\"sha\":\"115ba9ab822379097d478fd2e1ab457cb363c7ef\",\"repoName\":\"vasindran/devops-interview\",\"slotName\":\"Production\",\"commitMessage\":\"Add or update the Azure App Service build and deployment workflow config\"}"
+    message = "{\"type\":\"deployment\",\"sha\":\"115ba9ab822379097d478fd2e1ab457cb363c7ef\",\"repoName\":\"vasindran/devops-interview\",\"slotName\":\"Production\",\"commitMessage\":\"Add or update the Azure App Service build and deployment workflow config\"}"
 
-    "start_time" = "2022-01-16T13:11:07.9159851Z"
+    start_time = "2022-01-16T13:11:07.9159851Z"
 
-    "status" = 4
+    status = 4
   }
 
-  "type" = "Microsoft.Web/sites/deployments"
+  type = "Microsoft.Web/sites/deployments"
 }
 
-"resources" = {
-  "apiVersion" = "2021-02-01"
+resources = {
+  apiVersion = "2021-02-01"
 
-  "dependsOn" = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
+  dependsOn = ["[resourceId('Microsoft.Web/sites', parameters('sites_BradyWather_name'))]"]
 
-  "location" = "Central US"
+  location = "Central US"
 
-  "name" = "[concat(parameters('sites_BradyWather_name'), '/', parameters('sites_BradyWather_name'), '.azurewebsites.net')]"
+  name = "[concat(parameters('sites_BradyWather_name'), '/', parameters('sites_BradyWather_name'), '.azurewebsites.net')]"
 
-  "properties" = {
-    "hostNameType" = "Verified"
+  properties = {
+    hostNameType = "Verified"
 
-    "siteName" = "BradyWather"
+    siteName = "BradyWather"
   }
 
-  "type" = "Microsoft.Web/sites/hostNameBindings"
+  type = "Microsoft.Web/sites/hostNameBindings"
 }
 
-"variables" = {}
+variables = {}
